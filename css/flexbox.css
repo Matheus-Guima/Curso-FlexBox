@@ -81,14 +81,71 @@
         flex-direction: column;
         justify-content: start;
     }
+}
 
+/* Tablet */
+@media (min-width:768px) {
     .menu__itens {
         padding-top: 20px;
     }
 }
-
 @media (min-width:834px) {
     .rodape__container {
         justify-content: space-between;
+    }
+}
+
+/* Desktop */
+
+@media (min-width:1024px) {
+    .menu__container{
+        height: calc(100% - 80px);
+    }
+}
+
+@media (min-width:1440px) {
+    .menu__container{
+        height: calc(100% - 80px);
+        max-width: 246px;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .menu__lista {
+        row-gap: 20px;
+        padding: 20px 17px 20px 15px;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+    display: flex;
+    }
+
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .jogos {
+        order: 3;
+    }
+
+    .filmes {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    .maispagina {
+        order: 4;
+    }
+
+    .menu__itens {
+        padding-top: 0px;
+        flex-direction: row;
+        column-gap: 15px;
+        align-items: center;
     }
 }
